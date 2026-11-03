@@ -1,93 +1,566 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Solar sem Susto: confira a proposta e entenda a conta de luz (Fio B e Lei 14.300)</title>
-<meta name="description" content="Antes de assinar, confira a proposta de energia solar: potência, geração estimada pela irradiação da cidade e preço por Wp. Veja o retorno ano a ano com o Fio B da Lei 14.300 e premissas escritas. Já tem placa? Leia a conta de luz e acompanhe a geração. Guia e planilha.">
-<meta property="og:type" content="website"><meta property="og:title" content="Solar sem Susto"><meta property="og:description" content="Confira a proposta de energia solar e entenda a conta de luz com a regra do Fio B (Lei 14.300). Guia de 25 páginas, planilha e exemplo. Regras conferidas em 27/10/2026.">
-<meta property="og:url" content="https://lucaszone36-jpg.github.io/solar-sem-susto/"><meta property="og:image" content="https://lucaszone36-jpg.github.io/solar-sem-susto/img/capa.jpg"><meta name="twitter:card" content="summary_large_image">
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solar sem Susto: conta alta mesmo com placa? Confira</title>
+<meta name="description" content="Leia consumo, injetado, compensado e crédito na conta de luz e veja se a compensação bate com a regra. Guia de 25 páginas e planilha. R$ 27.">
+<link rel="canonical" href="https://lucaszone36-jpg.github.io/solar-sem-susto/">
+<meta name="theme-color" content="#123b4f">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Solar sem Susto">
+<meta property="og:title" content="Conta alta mesmo com placa? Veja como ler cada linha">
+<meta property="og:description" content="Consumo, injetado, compensado e crédito: onde está cada número na conta e em que ordem conferir. Guia de 25 páginas e planilha. R$ 27, 7 dias de garantia.">
+<meta property="og:url" content="https://lucaszone36-jpg.github.io/solar-sem-susto/">
+<meta property="og:image" content="https://lucaszone36-jpg.github.io/solar-sem-susto/img/capa.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','474807754604596');fbq('track','PageView');fbq('track','ViewContent',{content_name:"Solar sem Susto",content_type:'product',value:27,currency:'BRL'});</script><noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=474807754604596&ev=PageView&noscript=1"></noscript>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/source-sans-3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--papel:#f8f6f1;--creme:#eef3f5;--tinta:#1c2830;--suave:#56656e;--linha:#dde4e8;--cor:#1d5a73;--cor-esc:#123b4f;--sol:#e9a21b;--clara:#fcf0d4;--serif:"Space Grotesk","Segoe UI",system-ui,sans-serif;--sans:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
-*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--papel);color:var(--tinta);font:17px/1.6 var(--sans)}body{margin:0;background:var(--papel)}
-img{max-width:100%;height:auto;display:block}:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}.estreito{max-width:760px}section{padding:64px 0}
-h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;margin:0 0 16px;letter-spacing:-.01em}h2{font-size:clamp(28px,4vw,40px)}p{margin:0 0 14px}
-.pequeno{font-size:14px;color:var(--suave)}
-.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--cor-esc);color:#fff;text-decoration:none;font-weight:650;font-size:18px;padding:18px 30px;border-radius:14px;min-height:56px;box-shadow:0 10px 24px -12px var(--cor-esc);transition:transform .2s,background .2s}
-.cta:hover{transform:translateY(-2px);background:var(--cor)}
-.hero{padding:40px 0 56px}.hero .grade{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
-.selo{display:inline-block;font-size:14px;color:var(--cor-esc);background:var(--clara);border-radius:999px;padding:6px 14px;margin-bottom:16px}
-.marca{font-family:var(--serif);color:var(--cor);font-size:20px;margin-bottom:6px}
-.hero h1{font-size:clamp(32px,4.4vw,48px)}.hero .sub{font-size:19px;color:var(--suave)}
-.capa{border-radius:20px;box-shadow:0 22px 46px -22px #12304a66}
-.dores{list-style:none;padding:0;margin:20px 0}.dores li{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--sol);border-radius:0 12px 12px 0;padding:14px 18px;margin-bottom:10px;font-size:18px}
-.escada{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 8px;align-items:end;height:170px}
-.escada div{display:flex;flex-direction:column;justify-content:flex-end;height:100%;text-align:center}
-.escada b{display:block;background:var(--cor);color:#fff;border-radius:8px 8px 0 0;font-family:var(--serif);padding-top:6px}
-.escada b.x{background:var(--sol);color:var(--cor-esc)}.escada b.q{background:repeating-linear-gradient(45deg,#fff,#fff 6px,#f8e2df 6px,#f8e2df 12px);color:#c0453a;border:1px dashed #c0453a}
-.escada span{font-size:14px;font-weight:650;margin-top:6px}
-.dentro{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:0;list-style:none}.dentro li{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:14px 16px 14px 44px;position:relative}
-.dentro li::before{content:"";position:absolute;left:16px;top:20px;width:14px;height:8px;border-left:2px solid var(--cor);border-bottom:2px solid var(--cor);transform:rotate(-45deg)}
-.cor{background:var(--creme)}.pq{display:grid;grid-template-columns:1fr 1fr;gap:18px}.pq div{background:#fff;border:1px solid var(--linha);border-radius:16px;padding:22px}.pq ul{padding-left:20px;margin:0}.pq li{margin-bottom:8px}
-.exemplo{background:#fff;border:1px solid var(--linha);border-radius:16px;padding:22px;margin-top:18px}
-.exemplo table{width:100%;border-collapse:collapse;font-size:15px}.exemplo td{padding:8px 6px;border-bottom:1px solid var(--linha)}.exemplo td:last-child{text-align:right;font-weight:650;white-space:nowrap}
-.preco{background:var(--cor-esc);color:var(--papel);text-align:center}.preco h2{color:#fff}.valor{font-family:var(--serif);font-size:clamp(64px,10vw,92px);line-height:1;margin:14px 0 6px;color:#fff}.valor small{font-size:.3em;color:#d6e6ee;font-family:var(--sans)}.preco .pequeno{color:#d6e6ee}
-.preco .cta{background:var(--sol);color:var(--cor-esc)}.preco .cta:hover{background:#f4b63a}
-.garantia{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;background:var(--clara);border-radius:22px;padding:30px}
-.selo-g{width:130px;height:130px;border-radius:50%;border:2px solid var(--cor-esc);display:grid;place-items:center;text-align:center;color:var(--cor-esc);font-family:var(--serif);line-height:1.1}.selo-g b{font-size:38px;display:block}
-.aviso{background:#fff;border:1px dashed var(--cor);border-radius:14px;padding:16px 18px;font-size:15px}
-details{border-bottom:1px solid var(--linha);padding:15px 0}summary{cursor:pointer;font-weight:650;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--cor);font-size:22px}details[open] summary::after{content:"–"}details p{margin:10px 0 0;color:var(--suave)}
-footer{padding:34px 0;font-size:13px;color:var(--suave)}footer a{color:var(--suave)}
-.fixa{position:fixed;left:0;right:0;bottom:0;display:none;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fffffff2;border-top:1px solid var(--linha);z-index:9}
-.fixa .p{font-family:var(--serif);font-size:24px;white-space:nowrap}.fixa .cta{padding:12px 20px;font-size:16px;min-height:48px;flex:1}
-@media (max-width:860px){section{padding:50px 0}.wrap{padding:0 16px}.hero .grade,.pq{grid-template-columns:1fr}.dentro{grid-template-columns:1fr}.garantia{grid-template-columns:1fr;justify-items:center;text-align:center}.cta{width:100%}.fixa{display:flex}footer{padding-bottom:100px}.escada{height:140px}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-.res{background:#fff;border:1px solid var(--linha);border-radius:18px;padding:18px 18px 14px;box-shadow:0 22px 46px -26px #12304a55;min-width:0}
-.res .rot,.res .seta{font-size:13px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:var(--suave);margin:0 0 8px}
-.res .seta{display:flex;align-items:center;gap:8px;margin:12px 0 10px;color:var(--cor-esc)}.res .seta::after{content:"";flex:1;height:1px;background:var(--linha)}
-.res dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;font-size:15px;line-height:1.4}.res dt{color:var(--suave)}.res dd{margin:0;font-weight:650;text-align:right;max-width:13em}
-.res .saida{background:var(--clara);border-radius:12px;padding:12px 14px}
-.res .alerta{display:inline-block;background:#fdecea;color:#a3271b;border:1px solid #f1b8b0;border-radius:8px;padding:3px 8px;font-weight:700;font-size:14px;line-height:1.35}
-.res .nota{font-size:12.5px;line-height:1.45;color:var(--suave);margin:10px 0 0}
-@media (max-width:860px){.hero .grade{display:flex;flex-direction:column;align-items:stretch;gap:0}.hero .txt{display:contents}.hero .selo{align-self:flex-start}.hero .res{order:1;margin:4px 0 22px}.hero .sub,.hero .txt>.cta,.hero .txt>.pequeno{order:2}}
-</style><script type="application/ld+json" id="dados-produto">{"@context":"https://schema.org","@graph":[{"@type":"Product","@id":"https://lucaszone36-jpg.github.io/solar-sem-susto/#produto","name":"Solar sem Susto","description":"Antes de assinar, confira a proposta de energia solar: potência, geração estimada pela irradiação da cidade e preço por Wp. Veja o retorno ano a ano com o Fio B da Lei 14.300 e premissas escritas. Já tem placa? Leia a conta de luz e acompanhe a geração. Guia e planilha.","url":"https://lucaszone36-jpg.github.io/solar-sem-susto/","image":"https://lucaszone36-jpg.github.io/solar-sem-susto/img/capa.jpg","category":"Guia e planilha (produto digital)","brand":{"@type":"Brand","name":"Com Critério"},"offers":{"@type":"Offer","price":"27.00","priceCurrency":"BRL","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"BR","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":7,"returnFees":"https://schema.org/FreeReturn"},"url":"https://lucaszone36-jpg.github.io/solar-sem-susto/"}},{"@type":"FAQPage","@id":"https://lucaszone36-jpg.github.io/solar-sem-susto/#perguntas","mainEntity":[{"@type":"Question","name":"Como recebo?","acceptedAnswer":{"@type":"Answer","text":"Acesso imediato pela área de membros da Kiwify. O link de acesso chega no e-mail informado na compra."}},{"@type":"Question","name":"Serve para quem ainda vai comprar?","acceptedAnswer":{"@type":"Answer","text":"Sim. A aba 1 confere a proposta e a aba 2 faz a conta de retorno com o Fio B do ano em que o sistema vai ligar. As 12 perguntas ajudam a pedir por escrito o que a proposta não diz."}},{"@type":"Question","name":"Vai zerar a minha conta de luz?","acceptedAnswer":{"@type":"Answer","text":"Não. Pela regra, toda casa paga o mínimo da ligação, e quem pediu a ligação depois de 07/01/2023 paga parte do Fio B sobre o que compensa. O guia mostra por que a conta não zera e como conferir se a compensação está certa."}},{"@type":"Question","name":"Substitui o engenheiro ou o integrador?","acceptedAnswer":{"@type":"Answer","text":"Não. O material explica as regras gerais e organiza os seus números. Projeto, dimensionamento e instalação são de profissional habilitado, com ART, seguindo as regras da sua distribuidora."}},{"@type":"Question","name":"E se a regra do Fio B mudar?","acceptedAnswer":{"@type":"Answer","text":"As regras foram conferidas em 28/10/2026. A MP 1.304, convertida na Lei 15.269/2025, não alterou os percentuais do Fio B do art. 27 da Lei 14.300. O que está em tramitação (como o PL 1.438/2026) está marcado e fora das contas. A planilha deixa o percentual de 2029 em diante, a tarifa e o Fio B em células editáveis."}},{"@type":"Question","name":"A planilha funciona no celular e no Google Planilhas?","acceptedAnswer":{"@type":"Answer","text":"Abre no Excel, no Google Planilhas e no LibreOffice, sem macro. No celular, o PDF lê bem; a planilha é mais confortável no computador ou no tablet."}},{"@type":"Question","name":"Garante economia ou retorno?","acceptedAnswer":{"@type":"Answer","text":"Não. Os números são estimativas com as premissas que você digita. O exemplo do guia é fictício e serve para mostrar a conta."}},{"@type":"Question","name":"E se eu me arrepender?","acceptedAnswer":{"@type":"Answer","text":"Você tem 7 dias para pedir 100% do valor de volta, sem justificar, pela Kiwify ou pelo e-mail lucaszone36@gmail.com."}}]}]}</script>
+@font-face{font-family:"Grotesk";src:url(fonts/space-grotesk.woff2) format("woff2");font-weight:500 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Source";src:url(fonts/source-sans-3.woff2) format("woff2");font-weight:400 600;font-style:normal;font-display:swap}
+:root{
+  --palco:#123b4f; --palco-2:#0d2c3b; --texto-palco:#f4f8fa; --texto-palco-2:#cfe0e8;
+  --sol:#f4b63a; --sol-tinta:#0d2c3b; --sol-clara:#fbe7b8;
+  --conta:#ffffff; --tinta:#1c2830; --tinta-2:#4b5a63; --telhado:#1d5a73; --ceu-clara:#e3eef3;
+  --papel:#f2f6f8; --papel-2:#e6eef2; --fio:#c6d3da;
+  --display:"Grotesk","Space Grotesk",system-ui,sans-serif;
+  --fonte:"Source","Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --t-display:clamp(2.25rem,1.45rem + 3.5vw,4rem);
+  --t-numero:clamp(1.5rem,1.2rem + 1.3vw,2.25rem);
+  --t-corpo:clamp(1.1875rem,1.13rem + .25vw,1.3125rem);
+  --t-aviso:1.25rem; --t-nota:1.125rem;
+  --e-1:4px; --e-2:8px; --e-3:12px; --e-4:16px; --e-5:24px; --e-6:32px; --e-7:48px; --e-8:72px; --e-9:120px;
+  --margem:clamp(16px,5.4vw,64px); --largura:1200px; --medida:34em;
+  --raio-botao:6px; --raio-objeto:14px;
+  --sombra-objeto:0 32px 70px -30px rgb(3 16 24 / .9);
+  --ease:cubic-bezier(.2,.8,.2,1); --ease-luz:cubic-bezier(.55,.05,.25,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-bottom:96px}
+body{margin:0;background:var(--palco);color:var(--texto-palco);font-family:var(--fonte);font-size:var(--t-corpo);line-height:1.5;overflow-wrap:break-word}
+img{display:block;max-width:100%;height:auto}
+b,strong{font-weight:600}
+a{color:inherit}
+p{margin:0}
+.so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.pular{position:fixed;top:-140px;left:8px;z-index:40;display:flex;flex-wrap:wrap;gap:8px}
+.pular:focus-within{top:8px}
+.pular a{display:inline-flex;align-items:center;min-height:48px;padding:0 var(--e-4);background:var(--texto-palco);color:var(--palco-2);font-weight:600;border-radius:var(--raio-botao)}
+:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+.papel :focus-visible{outline-color:var(--tinta)}
+
+/* ---------- herói: a conta de outubro posta contra a luz ---------- */
+.heroi{position:relative;isolation:isolate;overflow:hidden;padding:12px var(--margem) var(--e-6);
+  display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:"marca" "texto" "conta" "compra";row-gap:6px}
+.heroi::before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(60% 30% at 92% 4%,rgb(244 182 58 / .22),transparent 70%)}
+.marca{grid-area:marca;display:flex;justify-content:space-between;align-items:baseline;gap:var(--e-4);line-height:1.2}
+.marca__nome{font-family:var(--display);font-weight:700;color:var(--sol);letter-spacing:-.01em}
+.marca__tipo{font-family:var(--fonte);font-weight:500;font-size:var(--t-nota);letter-spacing:0;color:var(--texto-palco-2)}
+.marca__quem{font-size:var(--t-nota);color:var(--texto-palco-2)}
+@media (max-width:559px){.marca__quem{display:none}}
+.texto{grid-area:texto}
+h1{margin:0;font-family:var(--display);font-size:var(--t-display);line-height:1.02;letter-spacing:-.03em;font-weight:700}
+h1 .l{display:block}
+.h1-resto{display:block;margin-top:2px;font-size:clamp(1.25rem,1.1rem + .8vw,1.75rem);font-weight:500;letter-spacing:-.015em;line-height:1.1;color:var(--texto-palco-2)}
+h1.h1--longo{font-size:clamp(1.75rem,1.2rem + 2.6vw,3rem);line-height:1.08;letter-spacing:-.025em}
+h1.h1--longo .l{display:inline}
+.sub{margin:var(--e-2) 0 0;max-width:32em;color:var(--texto-palco-2);line-height:1.35}
+.objeto{grid-area:conta;margin:0}
+.conta{position:relative;overflow:hidden;border-radius:var(--raio-objeto);background:var(--conta);color:var(--tinta);box-shadow:var(--sombra-objeto)}
+.conta__topo{margin:0;padding:4px var(--e-4);background:var(--sol);color:var(--sol-tinta);font-family:var(--display);font-weight:700;font-size:1.0625rem;letter-spacing:.01em;display:flex;justify-content:space-between;gap:var(--e-3)}
+.conta__topo span:last-child{font-family:var(--fonte);font-weight:600;letter-spacing:0}
+.linhas{margin:0;padding:2px var(--e-4)}
+.linha{display:flex;justify-content:space-between;align-items:baseline;gap:var(--e-3);padding:0}
+.linha dt{font-size:var(--t-corpo);line-height:1.2}
+.linha dd{margin:0;font-family:var(--display);font-weight:600;font-size:var(--t-numero);line-height:1.05;font-variant-numeric:tabular-nums;white-space:nowrap}
+.linha dd small{font-size:.75em;font-weight:500;margin-left:.15em}
+.linha--marcada{margin:0 calc(-1*var(--e-2));padding:0 var(--e-2);border-radius:6px;background:var(--sol-clara)}
+.linha--regra dt,.linha--regra dd,.linha--esperado dt,.linha--esperado dd{color:var(--telhado)}
+.linhas--planilha{background:var(--ceu-clara);border-top:2px dashed #8fa9b6;padding:2px var(--e-4)}
+.leitura{margin:0;padding:6px var(--e-4);background:var(--sol);color:var(--sol-tinta)}
+.leitura b{display:block;font-family:var(--display);font-size:1.25rem;line-height:1.15;font-weight:700}
+.leitura span{display:block;font-family:var(--display);font-size:var(--t-numero);line-height:1.05;font-weight:700;letter-spacing:-.01em}
+.inverno{margin:0;padding:6px var(--e-4);background:var(--ceu-clara);color:var(--tinta);font-size:var(--t-nota);line-height:1.4}
+.inverno b{color:var(--telhado)}
+.conta::after{content:"";position:absolute;inset:-20% auto -20% 0;width:55%;pointer-events:none;opacity:0;
+  background:linear-gradient(100deg,transparent 0%,rgb(255 214 120 / 0) 20%,rgb(255 214 120 / .62) 50%,rgb(255 214 120 / 0) 80%,transparent 100%);transform:translateX(-120%) skewX(-12deg)}
+.rotulo{margin:4px 0 0;font-size:var(--t-corpo);line-height:1.3;color:var(--texto-palco-2)}
+.compra{grid-area:compra;display:grid;gap:var(--e-2);margin-top:0}
+.botao{display:flex;align-items:center;justify-content:center;min-height:56px;padding:var(--e-2) var(--e-5);border-radius:var(--raio-botao);
+  background:var(--sol);color:var(--sol-tinta);font:600 var(--t-aviso)/1.15 var(--fonte);text-decoration:none;text-align:center}
+.botao:hover{background:#f7c766}
+.botao:active{transform:translateY(1px);background:#e9a21b}
+.botao:focus-visible{outline:3px solid var(--texto-palco);outline-offset:3px}
+.botao[aria-busy=true]{cursor:progress}
+.seguranca{font-size:var(--t-nota);line-height:1.35;color:var(--texto-palco-2)}
+.seguranca b{color:var(--texto-palco)}
+.recebe{display:none}
+
+/* ---------- telas de leitura ---------- */
+.tela{padding:var(--e-8) var(--margem)}
+.col{max-width:var(--largura);margin:0 auto}
+.papel{background:var(--papel);color:var(--tinta)}
+.papel-2{background:var(--papel-2);color:var(--tinta)}
+.palco-2{background:var(--palco-2);color:var(--texto-palco)}
+.palco{background:var(--palco);color:var(--texto-palco)}
+.tela h2{margin:0;font-family:var(--display);font-size:clamp(1.75rem,1.3rem + 1.9vw,3rem);line-height:1.08;letter-spacing:-.025em;font-weight:700}
+.tela h3{margin:0;font-family:var(--display);font-size:1.375rem;line-height:1.2;font-weight:700;letter-spacing:-.01em}
+.txt>*+*{margin-top:var(--e-4)}
+.txt p,.txt ul,.txt ol,.txt dl{max-width:var(--medida)}
+.txt h2+*{margin-top:var(--e-4)}
+.eyebrow{font-weight:600;color:var(--telhado);font-size:var(--t-nota);margin:0 0 var(--e-2)}
+.palco-2 .eyebrow,.palco .eyebrow{color:var(--sol)}
+.nota{font-size:var(--t-nota);line-height:1.4;color:var(--tinta-2)}
+.palco-2 .nota,.palco .nota{color:var(--texto-palco-2)}
+.duas{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--e-6)}
+
+/* segunda opinião (logo depois do herói) */
+.tela--topo{padding-bottom:0}
+.tela--topo h2{font-size:clamp(1.5rem,1.2rem + 1.2vw,2.25rem);max-width:var(--medida)}
+#numeros{padding-top:var(--e-7)}
+
+/* tela 2 */
+.numeros{margin-bottom:0;display:grid;gap:0}
+.numeros>div{padding:var(--e-3) var(--e-3);margin:0 calc(-1*var(--e-3));border-top:1px solid var(--fio);border-radius:6px}
+.numeros>div:last-child{border-bottom:1px solid var(--fio)}
+.numeros dt{font-family:var(--display);font-weight:700;font-size:1.375rem;line-height:1.2}
+.numeros dd{margin:var(--e-1) 0 0}
+.numeros b{font-weight:600}
+
+/* páginas reais do guia: miniatura + ampliar */
+.pag{margin:0;display:flex;align-items:flex-start;gap:var(--e-4)}
+.pag__img{position:relative;display:block;flex:none;width:140px;line-height:0;background:#fff;border:1px solid var(--fio);border-radius:2px}
+.pag__img img{width:100%;height:auto}
+.pag figcaption{font-size:var(--t-nota);line-height:1.4;color:var(--tinta-2)}
+.palco-2 .pag figcaption{color:var(--texto-palco-2)}
+.pag figcaption span{display:block;margin-top:var(--e-1)}
+.dest{position:absolute;left:8%;width:83.8%;height:2.54%;top:var(--y);background:rgb(244 182 58 / .5);outline:1px solid #b87d0b}
+
+/* tela 3 */
+.ordem{margin-bottom:0;padding:0;list-style:none;counter-reset:o}
+.ordem li{counter-increment:o;display:flex;gap:var(--e-4);align-items:baseline;min-height:56px;padding:var(--e-3) 0;border-top:1px solid #b5c6ce;font-size:var(--t-aviso);line-height:1.3}
+.ordem li:last-child{border-bottom:1px solid #b5c6ce}
+.ordem li::before{content:counter(o);flex:none;width:1.15em;font-family:var(--display);font-weight:700;font-size:1.75rem;line-height:1;color:var(--telhado)}
+
+/* tela 4 */
+.leva{margin-bottom:0;padding:0;list-style:none}
+.leva li{position:relative;padding:var(--e-3) 0 var(--e-3) var(--e-5);border-top:1px solid var(--fio)}
+.leva li:last-child{border-bottom:1px solid var(--fio)}
+.leva li::before{content:"";position:absolute;left:2px;top:1.15em;width:10px;height:10px;border-radius:50%;background:var(--sol)}
+.pecas{display:flex;flex-wrap:wrap;gap:var(--e-4) var(--e-5);align-items:flex-start}
+.pecas .pag{flex-direction:column;gap:var(--e-2);max-width:184px}
+.pecas .pag__img{width:120px}
+.pecas .capa{max-width:96px}
+.pecas .capa img{border-radius:2px;box-shadow:0 10px 24px -12px rgb(0 0 0 / .55)}
+.ia{font-weight:600}
+.seg-eletrica{padding:var(--e-3) var(--e-4);border-left:4px solid var(--sol);background:var(--papel-2)}
+.papel-2 .seg-eletrica{background:var(--papel)}
+
+/* tela 5: a proposta */
+.prop .linhas{padding:var(--e-3) var(--e-4)}
+.prop .linha{flex-direction:column;align-items:flex-start;gap:0;padding:var(--e-2) 0}
+.prop .linha dd small{font-size:var(--t-nota)}
+.prop__onde{padding:var(--e-3) var(--e-4) 0;font-size:var(--t-corpo);line-height:1.3}
+.prop .linha--marcada{margin:0 calc(-1*var(--e-2));padding:var(--e-2)}
+.ver{margin:0}
+
+/* tela 6: preço */
+.preco__grid{margin-top:var(--e-6)}
+.valor{font-family:var(--display);font-weight:700;font-size:clamp(3.5rem,2.6rem + 4vw,5.5rem);line-height:1;letter-spacing:-.03em;white-space:nowrap}
+.valor-nota{color:var(--texto-palco-2)}
+.aviso{font-size:var(--t-aviso);line-height:1.4;max-width:var(--medida)}
+.link-bloco{display:inline-flex;align-items:center;min-height:48px;font-weight:600;color:var(--sol)}
+.preco__a>*+*{margin-top:var(--e-4)}
+.preco__a .valor{margin-top:var(--e-6)}
+.preco__b{display:grid;gap:var(--e-4);align-content:start;margin-top:var(--e-6)}
+.preco__b .compra{grid-area:auto;margin-top:0}
+.acesso{max-width:var(--medida)}
+.selo{margin:var(--e-2) 0 var(--e-1);width:min(100%,208px);border-radius:var(--raio-objeto);background:var(--conta);color:var(--tinta);overflow:hidden;box-shadow:var(--sombra-objeto)}
+.selo b{display:block;padding:var(--e-1) var(--e-4);background:var(--sol);color:var(--sol-tinta);font-family:var(--display);font-size:1.125rem;font-weight:700}
+.selo span{display:block;padding:var(--e-2) var(--e-4) 0;font-family:var(--display);font-weight:700;font-size:2.5rem;line-height:1.1}
+.selo small{display:block;padding:0 var(--e-4) var(--e-3);font-size:var(--t-nota);line-height:1.35}
+.garantia{display:grid;gap:var(--e-3)}
+.garantia p{max-width:var(--medida)}
+
+/* tela 7: perguntas */
+.faq{margin-top:var(--e-6)}
+.faq details{border-top:1px solid var(--fio);max-width:var(--medida)}
+.faq details:last-child{border-bottom:1px solid var(--fio)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:var(--e-4);min-height:56px;padding:var(--e-3) 0;font:600 var(--t-aviso)/1.25 var(--fonte)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:40px;text-align:center;font:600 1.75rem/1 var(--display)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:0 0 var(--e-4)}
+.faq .ln{display:block;margin-top:var(--e-2);padding-left:var(--e-4);border-left:3px solid var(--sol)}
+
+/* rodapé */
+.rodape{padding:var(--e-8) var(--margem) calc(var(--e-8) + 72px + env(safe-area-inset-bottom))}
+.rodape p.rodape__nome{font-family:var(--display);font-weight:700;letter-spacing:-.03em;line-height:1;font-size:var(--t-display);color:var(--sol)}
+.rodape p{font-size:var(--t-nota);line-height:1.5;color:var(--texto-palco-2);max-width:var(--medida)}
+.rodape .col>*+*{margin-top:var(--e-3)}
+.rodape .col>.rodape__nome+p{margin-top:var(--e-5)}
+.rodape a{display:inline-flex;align-items:center;min-height:48px;color:var(--texto-palco);font-weight:600}
+.rodape .links{display:flex;flex-wrap:wrap;gap:0 var(--e-5)}
+.rodape p a{display:inline-block;min-height:0;padding:.8em 0;margin:-.8em 0}
+.rodape p.links a{display:inline-flex;min-height:48px;padding:0;margin:0}
+
+/* barra fixa (celular) */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:var(--e-3);min-height:72px;
+  padding:10px var(--margem) calc(10px + env(safe-area-inset-bottom));background:var(--palco-2);box-shadow:0 -10px 28px -12px rgb(0 0 0 / .6);
+  transform:translateY(100%);visibility:hidden}
+.barra.on{transform:none;visibility:visible}
+.barra__preco{display:grid;line-height:1.1;flex:none}
+.barra__preco b{font-family:var(--display);font-size:1.5rem;font-weight:700}
+.barra__preco span{font-size:var(--t-nota);color:var(--texto-palco-2)}
+.barra .botao{min-height:52px;padding:var(--e-2) var(--e-4);font-size:1.125rem;flex:1 1 auto;max-width:15rem}
+
+/* ampliar página */
+dialog{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:#0a2230;color:var(--texto-palco)}
+dialog::backdrop{background:#0a2230}
+.dlg__topo{display:flex;justify-content:flex-end;align-items:center;padding:var(--e-2) var(--e-4);height:64px}
+.fechar{min-height:48px;min-width:48px;padding:0 var(--e-5);border:0;border-radius:var(--raio-botao);background:var(--sol);color:var(--sol-tinta);font:600 var(--t-aviso) var(--fonte);cursor:pointer}
+.dlg__rolo{overflow:auto;height:calc(100% - 64px);touch-action:pan-x pan-y pinch-zoom;-webkit-overflow-scrolling:touch}
+.dlg__rolo img{width:max(100%,720px);max-width:none;height:auto;background:#fff}
+
+/* movimento: só quando a pessoa não pediu menos */
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .botao{transition:background-color .16s var(--ease),transform .16s var(--ease)}
+  .conta{animation:surge .5s var(--ease) both}
+  .conta::after{animation:varre .8s var(--ease-luz) .1s both}
+  .linhas--planilha,.linha--regra,.leitura{animation:revela .8s var(--ease-luz) .1s both}
+  .linha--marcada{animation:marca .25s var(--ease) .65s both}
+  @keyframes surge{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @keyframes varre{0%{opacity:1;transform:translateX(-120%) skewX(-12deg)}85%{opacity:1}100%{opacity:0;transform:translateX(260%) skewX(-12deg)}}
+  @keyframes revela{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+  @keyframes marca{from{background:transparent}to{background:var(--sol-clara)}}
+  .barra{transition:transform .24s var(--ease),visibility 0s linear .24s}
+  .barra.on{transition:transform .24s var(--ease),visibility 0s}
+  /* tela 2: os 4 destaques e as 4 linhas */
+  .js .dest{opacity:0;transition:opacity .2s var(--ease);transition-delay:calc(var(--i)*120ms)}
+  .js .visto .dest{opacity:1}
+  .js .numeros>div{transition:background-color .2s var(--ease);transition-delay:calc(var(--i)*120ms)}
+  .js .visto .numeros>div{background-color:rgb(251 231 184 / .55)}
+  /* tela 5: a mesma luz atravessa a proposta */
+  .js .prop .conta{animation:none}
+  .js .prop .conta::after{animation:none}
+  .js .prop .linha--regra,.js .prop .leitura{animation:none;clip-path:inset(0 100% 0 0);transition:clip-path .8s var(--ease-luz)}
+  .js .prop .linha--marcada{animation:none;background:transparent;transition:background-color .25s var(--ease) .65s}
+  .js .visto .prop .conta::after,.js .prop.visto .conta::after{animation:varre .8s var(--ease-luz) both}
+  .js .visto .prop .linha--regra,.js .visto .prop .leitura{clip-path:inset(0 0 0 0)}
+  .js .visto .prop .linha--marcada{background:var(--sol-clara)}
+  /* tela 6: o selo surge */
+  .js .selo{opacity:0;transform:translateY(14px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+  .js .visto .selo{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .js .numeros>div{background-color:rgb(251 231 184 / .55)}
+}
+
+/* ---------- desktop ---------- */
+@media (min-width:900px){
+  .heroi{padding:var(--e-6) 0 var(--e-8);column-gap:0;row-gap:var(--e-5);
+    grid-template-columns:[full-start] minmax(var(--margem),1fr) [txt-start] minmax(0,620px) [txt-end] clamp(40px,4vw,64px) [obj-start] minmax(0,520px) [obj-end] minmax(var(--margem),1fr) [full-end];
+    grid-template-areas:none;grid-template-rows:auto var(--e-5) auto auto var(--e-4)}
+  .heroi::before{background:radial-gradient(38% 46% at 86% 8%,rgb(244 182 58 / .26),transparent 70%)}
+  .marca{grid-column:txt-start/obj-end;grid-row:1}
+  .texto{grid-column:txt;grid-row:3;align-self:end}
+  .compra{grid-column:txt;grid-row:4;align-self:start;margin:0;max-width:32rem}
+  .objeto{grid-column:obj;grid-row:2/6;align-self:center;margin:0}
+  .conta__topo{padding:var(--e-3) var(--e-5);font-size:1.125rem}
+  .linhas{padding:var(--e-3) var(--e-5)}
+  .linha{padding:var(--e-2) 0}
+  .linha--marcada{margin:0 calc(-1*var(--e-3));padding:var(--e-2) var(--e-3)}
+  .leitura,.inverno{padding:var(--e-4) var(--e-5)}
+  .leitura b{font-size:1.375rem}
+  .sub{margin-top:var(--e-5)}
+  .botao{justify-self:start;min-width:26rem}
+  .recebe{display:flex;align-items:center;gap:var(--e-4);margin:var(--e-4) 0 0;color:var(--texto-palco-2);font-size:var(--t-nota);line-height:1.4}
+  .recebe img{width:72px;height:auto;border-radius:2px;box-shadow:0 10px 24px -10px rgb(0 0 0 / .7);flex:none}
+  .tela{padding:var(--e-9) var(--margem)}
+  .duas{grid-template-columns:minmax(0,380px) minmax(0,1fr);column-gap:clamp(40px,6vw,96px);align-items:start}
+  .duas--inv{grid-template-columns:minmax(0,1fr) minmax(0,520px)}
+  .duas--inv .txt{grid-column:1;grid-row:1}
+  .duas--inv .objeto2{grid-column:2;grid-row:1/3}
+  .duas--inv .pag--p11{grid-column:1;grid-row:2}
+  .duas--4{grid-template-columns:minmax(0,420px) minmax(0,1fr)}
+  .duas--3{grid-template-columns:minmax(0,34em) minmax(0,28em)}
+  .esq{order:-1}
+  .pag{flex-direction:column;gap:var(--e-2)}
+  .pag__img{width:100%}
+  .duas .pag{max-width:380px}
+  .duas .pecas .pag{max-width:200px}
+  .duas .pecas .pag__img{width:200px}
+  .duas .pecas .capa{max-width:150px}
+  .duas--inv .pag{max-width:240px}
+  .duas--inv .pag__img{width:240px}
+  .preco__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,26rem);column-gap:clamp(40px,6vw,96px);align-items:start}
+  .preco__a .valor{margin-top:var(--e-5)}
+  .preco__b{margin-top:0}
+  .botao.botao--preco{min-width:0;width:100%}
+  .barra{display:none}
+  .rodape{padding-bottom:var(--e-8)}
+  .link-bloco{margin-top:0}
+}
+@media (max-width:899px){
+  .duas--inv .objeto2{margin-top:var(--e-2)}
+}
+</style>
+<script type="application/ld+json" id="dados-produto">{"@context":"https://schema.org","@graph":[{"@type":"Product","@id":"https://lucaszone36-jpg.github.io/solar-sem-susto/#produto","name":"Solar sem Susto","description":"Leia consumo, injetado, compensado e crédito na conta de luz e veja se a compensação bate com a regra. Guia de 25 páginas e planilha. R$ 27.","url":"https://lucaszone36-jpg.github.io/solar-sem-susto/","image":"https://lucaszone36-jpg.github.io/solar-sem-susto/img/capa.jpg","category":"Guia e planilha (produto digital)","brand":{"@type":"Brand","name":"Com Critério"},"offers":{"@type":"Offer","price":"27.00","priceCurrency":"BRL","url":"https://pay.kiwify.com.br/lJJpBgc","availability":"https://schema.org/InStock","hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","applicableCountry":"BR","returnPolicyCategory":"https://schema.org/MerchantReturnFiniteReturnWindow","merchantReturnDays":7,"returnFees":"https://schema.org/FreeReturn"}}},{"@type":"FAQPage","@id":"https://lucaszone36-jpg.github.io/solar-sem-susto/#perguntas","mainEntity":[{"@type":"Question","name":"A placa zera a conta de luz?","acceptedAnswer":{"@type":"Answer","text":"Não. Toda casa paga o mínimo da ligação: 30, 50 ou 100 kWh por mês, conforme o tipo de ligação. Quem pediu a ligação depois de 07/01/2023 também paga uma parte do Fio B (o uso da rede) sobre o que compensa: 60% em 2026, 75% em 2027 e 90% em 2028 (Lei 14.300, art. 27). De 2029 em diante, a regra da ANEEL ainda não saiu. O guia mostra como conferir se a compensação está certa."}},{"@type":"Question","name":"Dá para usar no celular?","acceptedAnswer":{"@type":"Answer","text":"O guia em PDF lê bem no celular. A planilha abre no Google Planilhas, no Excel e no LibreOffice, sem macro, mas é mais confortável no computador ou no tablet."}},{"@type":"Question","name":"Substitui o instalador?","acceptedAnswer":{"@type":"Answer","text":"Não. O material explica as regras gerais e organiza os seus números. Aviso completo: Não é projeto nem serviço técnico. Não substitui o engenheiro, o instalador nem a distribuidora. Projeto e instalação exigem profissional habilitado, com ART, e seguem as regras da sua distribuidora. Não mexe no seu sistema nem na sua conta. A planilha calcula com o que você digita; não lê o inversor nem a distribuidora. Não garante economia, geração, retorno nem resultado. Não é recomendação de investimento nem de financiamento. Não tem vínculo com a ANEEL, com distribuidoras, fabricantes, instaladores ou bancos. Regras conferidas nas fontes oficiais em 27/10/2026. O que está em tramitação está marcado no guia e fica fora das contas."}},{"@type":"Question","name":"E a MP 1.304? A regra mudou de novo?","acceptedAnswer":{"@type":"Answer","text":"Não para o Fio B. A MP 1.304 virou a Lei 15.269/2025 e não mudou os percentuais do art. 27 da Lei 14.300 (conferido em 28/10/2026). O PL 1.438/2026 está em tramitação na Câmara e não vale enquanto não virar lei. No guia, ele fica marcado e fora das contas. Na planilha, o Fio B, a tarifa e o percentual de 2029 em diante ficam em células que você pode mudar."}},{"@type":"Question","name":"Garante economia?","acceptedAnswer":{"@type":"Answer","text":"Não. O guia não promete economia, geração nem retorno. Os números são do exemplo, com as premissas escritas, e servem para mostrar a conta."}}]}]}</script>
 </head>
-<body><main>
-<header class="hero"><div class="wrap grade">
-  <div class="txt"><span class="selo">Para quem vai comprar ou já tem placa solar em casa</span><p class="marca">Solar sem Susto</p>
-    <h1>Digite a proposta do integrador e veja se a geração prometida bate com o sol da sua cidade</h1><p class="sub">Potência, geração estimada pela irradiação da cidade e preço por Wp. O retorno ano a ano com o Fio B da Lei 14.300 e as premissas na mesa. E, depois de instalado, cada linha da conta e um diário que avisa quando a geração cai.</p>
-    <a class="cta" href="https://pay.kiwify.com.br/lJJpBgc">Quero o meu por R$ 27</a><p class="pequeno" style="margin-top:10px">Guia de 25 páginas + planilha + exemplo · acesso na hora · garantia de 7 dias</p></div>
-  <div class="res" role="group" aria-label="Exemplo do que a planilha mostra ao conferir uma proposta"><p class="rot">No exemplo · você digita a proposta</p>
-    <dl><dt>Cidade</dt><dd>São Paulo (SP)</dd><dt>Placas</dt><dd>8 de 550 W</dd><dt>Geração prometida</dt><dd>600 kWh/mês</dd><dt>Preço da proposta</dt><dd>R$ 14.960,00</dd></dl>
-    <p class="seta">A planilha mostra</p>
-    <div class="saida"><dl><dt>Potência do sistema</dt><dd>4,40 kWp</dd><dt>Geração estimada pelo sol da cidade (70% a 80%)</dt><dd>424 a 485 kWh/mês</dd><dt>Promessa acima da estimativa (75%)</dt><dd>32%</dd><dt>Preço por Wp (referência R$ 2,84)</dt><dd>R$ 3,40</dd></dl>
-    <p style="margin:10px 0 0"><span class="alerta">PROMESSA ACIMA DA FAIXA: PEÇA AS PREMISSAS</span></p></div>
-    <p class="nota">Reprodução dos valores calculados pela planilha de exemplo (casa fictícia de 500 kWh/mês em São Paulo); não é captura de tela. Estimativa com premissas, não promessa de geração nem de economia.</p></div>
-</div></header>
-<section><div class="wrap estreito"><h2>A regra mudou para quem pede a ligação agora</h2>
-  <p>Pela Lei 14.300/2022, quem pediu a ligação depois de 07/01/2023 paga, sobre cada kWh compensado, uma parte do <b>Fio B</b> (o uso da rede de distribuição). O percentual sobe todo ano (art. 27):</p>
-  <div class="escada" aria-label="Percentual do Fio B: 60% em 2026, 75% em 2027, 90% em 2028 e regra a definir a partir de 2029"><div><b style="height:60%">60%</b><span>2026</span></div><div><b class="x" style="height:75%">75%</b><span>2027</span></div><div><b style="height:90%">90%</b><span>2028</span></div><div><b class="q" style="height:100%">?</b><span>2029+</span></div></div>
-  <p class="pequeno">De 2029 em diante, a regra da ANEEL ainda não foi publicada (art. 17). O PL 1.438/2026, que muda essa cobrança, está em tramitação na Câmara e não vale enquanto não virar lei. Regras conferidas em 27/10/2026.</p>
-  <ul class="dores"><li><b>Antes de assinar:</b> a simulação da proposta usa o Fio B do ano em que o sistema vai ligar? A geração prometida bate com o sol da sua cidade? O preço por Wp está perto da média?</li><li><b>Depois de instalado:</b> a conta não zera por regra (mínimo da ligação e Fio B). Mas a compensação e o crédito precisam bater, e a queda de geração precisa ser vista em dias, não em meses.</li></ul>
-  <p>O <b>Solar sem Susto</b> é a segunda opinião do lado de quem compra: não vende placa nem indica integrador. Ele dá as contas e as perguntas para você conversar com o vendedor, o instalador e a distribuidora em pé de igualdade.</p></div></section>
-<section class="cor"><div class="wrap"><h2>O que tem dentro</h2><img class="capa" src="img/capa.jpg" width="1280" height="720" alt="Capa do guia Solar sem Susto: casa com placas solares e uma conta de luz sendo conferida com lupa" loading="lazy" style="max-width:560px;width:100%;margin:0 0 24px"><ul class="dentro"><li><b>Conferir a proposta:</b> potência em kWp, geração estimada pela irradiação de 27 capitais (ou da sua cidade) com taxa de desempenho de 70% a 80%, e preço por Wp contra uma referência de mercado.</li><li><b>12 perguntas para o integrador:</b> premissas da geração, data do pedido de conexão, ART, visita técnica, garantias por escrito e monitoramento.</li><li><b>Retorno ano a ano:</b> 25 anos com o percentual do Fio B de cada ano (GD I ou GD II pela data do protocolo) e todas as premissas editáveis.</li><li><b>Leitor da conta de luz:</b> consumo, injetado, compensado, crédito e o mínimo da ligação, com a compensação esperada e o alerta quando não bate.</li><li><b>Diário de geração:</b> a geração do dia contra o esperado, com alerta de queda pela média de 7 dias.</li><li><b>Planilha de exemplo:</b> uma casa fictícia de 500 kWh/mês, com proposta, 12 contas e 90 dias de diário. Funciona no Excel, no Google Planilhas e no LibreOffice, sem macro.</li><li><b>Guia em PDF de 25 páginas:</b> como a energia anda, a regra do Fio B, a proposta, o retorno, a conta, o "não está gerando" e a quem recorrer, com a fonte oficial no fim de cada capítulo.</li></ul>
-  <div class="exemplo"><h3>Uma amostra do exemplo do guia</h3><p class="pequeno">Casa fictícia em São Paulo, 500 kWh/mês, proposta de 4,4 kWp. Números do exemplo, com as premissas escritas no guia; não são promessa.</p>
-  <table><tr><td>Geração prometida pela proposta</td><td>600 kWh/mês</td></tr><tr><td>Geração estimada pela irradiação (taxa de 70% a 80%)</td><td>424 a 485 kWh/mês</td></tr><tr><td>Preço por Wp da proposta</td><td>R$ 3,40</td></tr><tr><td>Referência de mercado (Greener, jun/2025)</td><td>R$ 2,84</td></tr><tr><td>Leitura</td><td>peça as premissas por escrito</td></tr></table></div>
-  <p style="margin-top:24px"><a class="cta" href="https://pay.kiwify.com.br/lJJpBgc">Quero conferir a minha</a></p></div></section>
-<section><div class="wrap estreito"><div class="pq"><div><h3>É para você se…</h3><ul><li>Vai comprar energia solar para casa e tem uma proposta na mão.</li><li>Já tem placas e quer entender a conta, a compensação e o crédito.</li><li>Quer acompanhar a geração e saber cedo quando ela cai.</li></ul></div><div><h3>Não é para você se…</h3><ul><li>Procura curso de instalador ou de "renda extra com energia solar".</li><li>Precisa de projeto, dimensionamento, laudo ou instalação.</li><li>O sistema é isolado (off-grid), com bateria, por assinatura ou de empresa no grupo A.</li></ul></div></div>
-  <p class="aviso" style="margin-top:18px"><b>O que este produto NÃO é:</b> não é projeto nem serviço técnico e <b>não substitui o engenheiro, o integrador nem a distribuidora</b>. Projeto e instalação exigem profissional habilitado, com ART. A planilha calcula com o que você digita e não mexe no seu sistema. Não garante economia, geração, retorno nem resultado: os números são estimativas com premissas. Não é recomendação de investimento nem de financiamento. Sem vínculo com a ANEEL, com distribuidoras, fabricantes, integradoras ou bancos. Regras conferidas nas fontes oficiais em 27/10/2026; o que está em tramitação está marcado no guia.</p></div></section>
-<section class="preco" id="preco"><div class="wrap estreito"><h2>Tudo por um pagamento único</h2>
-  <div class="valor">R$ 27 <small>uma vez</small></div><p class="pequeno">Guia de 25 páginas + planilha + exemplo · sem mensalidade</p>
-  <p style="margin-top:22px"><a class="cta" href="https://pay.kiwify.com.br/lJJpBgc">Garantir o meu agora</a></p><p class="pequeno">Pix ou cartão · acesso imediato pela área de membros da Kiwify (o link chega no seu e-mail)</p></div></section>
-<section><div class="wrap estreito"><div class="garantia"><div class="selo-g"><div><b>7</b>dias<br><small>100% de volta</small></div></div>
-  <div><h2>Leia por 7 dias. Se não servir, o dinheiro volta inteiro.</h2><p>Peça o reembolso pela Kiwify ou pelo e-mail <a href="mailto:lucaszone36@gmail.com">lucaszone36@gmail.com</a>, sem precisar explicar. Esse prazo é um direito seu pelo Código de Defesa do Consumidor (art. 49).</p><a class="cta" href="https://pay.kiwify.com.br/lJJpBgc">Quero conhecer com 7 dias de garantia</a></div></div></div></section>
-<section class="cor"><div class="wrap estreito"><h2>Perguntas frequentes</h2><details><summary>Como recebo?</summary><p>Acesso imediato pela área de membros da Kiwify. O link de acesso chega no e-mail informado na compra.</p></details><details><summary>Serve para quem ainda vai comprar?</summary><p>Sim. A aba 1 confere a proposta e a aba 2 faz a conta de retorno com o Fio B do ano em que o sistema vai ligar. As 12 perguntas ajudam a pedir por escrito o que a proposta não diz.</p></details><details><summary>Vai zerar a minha conta de luz?</summary><p>Não. Pela regra, toda casa paga o mínimo da ligação, e quem pediu a ligação depois de 07/01/2023 paga parte do Fio B sobre o que compensa. O guia mostra por que a conta não zera e como conferir se a compensação está certa.</p></details><details><summary>Substitui o engenheiro ou o integrador?</summary><p>Não. O material explica as regras gerais e organiza os seus números. Projeto, dimensionamento e instalação são de profissional habilitado, com ART, seguindo as regras da sua distribuidora.</p></details><details><summary>E se a regra do Fio B mudar?</summary><p>As regras foram conferidas em 28/10/2026. A MP 1.304, convertida na Lei 15.269/2025, não alterou os percentuais do Fio B do art. 27 da Lei 14.300. O que está em tramitação (como o PL 1.438/2026) está marcado e fora das contas. A planilha deixa o percentual de 2029 em diante, a tarifa e o Fio B em células editáveis.</p></details><details><summary>A planilha funciona no celular e no Google Planilhas?</summary><p>Abre no Excel, no Google Planilhas e no LibreOffice, sem macro. No celular, o PDF lê bem; a planilha é mais confortável no computador ou no tablet.</p></details><details><summary>Garante economia ou retorno?</summary><p>Não. Os números são estimativas com as premissas que você digita. O exemplo do guia é fictício e serve para mostrar a conta.</p></details><details><summary>E se eu me arrepender?</summary><p>Você tem 7 dias para pedir 100% do valor de volta, sem justificar, pela Kiwify ou pelo e-mail lucaszone36@gmail.com.</p></details></div></section>
+<body>
+<div class="pular"><a href="#conteudo">Pular para o conteúdo</a><a href="#preco">Pular para o preço</a></div>
+<main id="conteudo">
+
+<section class="heroi palco" aria-labelledby="titulo">
+  <p class="marca"><span class="marca__nome">Solar sem Susto<span class="marca__tipo"> · guia + planilha</span></span><span class="marca__quem">Com Critério</span></p>
+
+  <div class="texto">
+    <h1 id="titulo"><span class="l">Conta alta</span> <span class="l">mesmo com placa?</span> <span class="h1-resto">Veja como ler cada linha</span></h1>
+  </div>
+
+  <div class="objeto">
+    <div class="conta" role="group" aria-label="Exemplo do guia: conta de outubro conferida">
+      <p class="conta__topo"><span>Conta de outubro</span><span>exemplo do guia</span></p>
+      <dl class="linhas">
+        <div class="linha"><dt>Consumo da rede</dt><dd>349<small>kWh</small></dd></div>
+        <div class="linha"><dt>Injetado</dt><dd>351<small>kWh</small></dd></div>
+        <div class="linha linha--marcada"><dt>Compensado</dt><dd>229<small>kWh</small></dd></div>
+        <div class="linha"><dt>Crédito</dt><dd>2<small>kWh</small></dd></div>
+      </dl>
+      <dl class="linhas linhas--planilha">
+        <div class="linha linha--esperado"><dt>Esperado pela regra</dt><dd>349<small>kWh</small></dd></div>
+      </dl>
+      <p class="leitura"><b>Conferir com a distribuidora</b><span>120 kWh a menos</span></p>
+      <p class="inverno"><b>Maio a julho: crédito acabou.</b> No inverno a geração cai. Não é defeito.</p>
+    </div>
+    <p class="rotulo">Exemplo fictício do guia; a diferença de outubro foi colocada de propósito.</p>
+  </div>
+
+  <div class="compra">
+    <a class="botao" id="cta-heroi" href="https://pay.kiwify.com.br/lJJpBgc" data-evento="CliqueQuero">Quero conferir a minha conta por R$&nbsp;27</a>
+    <p class="seguranca">Pagamento na Kiwify, Pix ou cartão. <b>7&nbsp;dias</b> para pedir o dinheiro de volta.</p>
+    <p class="recebe"><img src="img/capa-mini-176.webp" srcset="img/capa-mini-176.webp 176w, img/capa-mini-352.webp 352w" sizes="72px" width="176" height="249" alt="Capa do guia Solar sem Susto" loading="lazy"><span>Guia de 25 páginas, leitor da conta, diário de geração e como reclamar com protocolo.</span></p>
+  </div>
+</section>
+
+<section class="tela papel tela--topo" id="segunda" aria-labelledby="t-seg">
+  <div class="col txt">
+    <h2 id="t-seg">Segunda opinião do lado de quem paga a conta</h2>
+    <p>O instalador e a distribuidora devem explicar a conta, e o guia mostra como pedir, com protocolo. O Solar sem Susto não vende placa e não indica instalador.</p>
+  </div>
+</section>
+
+<section class="tela papel" id="numeros" aria-labelledby="t2" data-revela>
+  <div class="col duas">
+    <div class="txt">
+      <h2 id="t2">Onde está cada número na conta</h2>
+      <p>São 4 números que já estão na conta: consumo, injetado, compensado e crédito. O guia mostra onde achar cada um e em que ordem conferir.</p>
+      <dl class="numeros">
+        <div style="--i:0"><dt>Consumo da rede</dt><dd>Aparece como "consumo", "energia ativa" ou "kWh consumidos". <b>É o que a casa puxou da rede.</b></dd></div>
+        <div style="--i:1"><dt>Injetado</dt><dd>Aparece como "energia injetada". <b>É o que foi para a rede.</b></dd></div>
+        <div style="--i:2"><dt>Compensado</dt><dd>Aparece como "energia compensada" ou "crédito utilizado". <b>É o que foi abatido no mês.</b></dd></div>
+        <div style="--i:3"><dt>Crédito</dt><dd>Aparece como "saldo de créditos" ou "saldo em kWh". <b>É o que sobrou para os próximos meses. Vale por 60 meses.</b></dd></div>
+      </dl>
+      <p>O que as placas geraram não está na conta: fica no aplicativo do inversor.</p>
+      <p>Os nomes mudam de uma distribuidora para outra. Não achou? Peça à distribuidora o "demonstrativo de compensação" do mês.</p>
+      <p class="nota">Exemplo fictício do guia (casa em São Paulo, 500 kWh por mês). A diferença de outubro foi colocada de propósito, para mostrar o alerta. Reprodução dos valores do exemplo, não é captura de tela.</p>
+    </div>
+    <figure class="pag esq">
+      <a class="pag__img" href="img/pdf-p15.webp" data-amplia><span class="so-leitor">Ampliar. </span><img src="img/pdf-p15-560.webp" srcset="img/pdf-p15-560.webp 560w, img/pdf-p15.webp 1100w" sizes="(min-width:900px) 380px, 140px" width="560" height="721" loading="lazy" alt="Página do guia, capítulo 5: tabela com o nome que cada número costuma ter na conta de luz e o que ele é"><span class="dest" style="--y:27.38%;--i:0" aria-hidden="true"></span><span class="dest" style="--y:29.92%;--i:1" aria-hidden="true"></span><span class="dest" style="--y:32.46%;--i:2" aria-hidden="true"></span><span class="dest" style="--y:35%;--i:3" aria-hidden="true"></span></a>
+      <figcaption>Página real do guia: capítulo 5, onde achar cada número na conta. Destaque em amarelo feito para esta página.<span>Toque para ampliar.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="tela papel-2" id="ordem" aria-labelledby="t3">
+  <div class="col duas duas--3">
+    <div class="txt">
+      <h2 id="t3">Conta alta: a ordem de conferir</h2>
+      <ol class="ordem">
+        <li>A geração do mês caiu?</li>
+        <li>O consumo da casa subiu?</li>
+        <li>O crédito acabou?</li>
+        <li>A compensação bate?</li>
+        <li>Mudou a tarifa ou a bandeira?</li>
+      </ol>
+    </div>
+    <div class="txt">
+      <p>Às vezes não é defeito: no inverno o crédito acaba e a conta sobe.</p>
+      <p>Quando a compensação não bate, o guia diz a quem reclamar, e em que ordem.</p>
+      <p>O passo a passo de cada pergunta está no capítulo 5.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tela papel" id="vem" aria-labelledby="t4">
+  <div class="col duas duas--4">
+    <div class="txt">
+      <h2 id="t4">O que vem</h2>
+      <ul class="leva">
+        <li><b>Guia em PDF de 25 páginas</b>, com a fonte oficial no fim de cada capítulo.</li>
+        <li><b>Leitor da conta.</b> Você copia os números da conta, e a planilha compara o compensado com o esperado. Avisa quando não bate.</li>
+        <li><b>Diário de geração.</b> Uma linha por dia, com a geração do aplicativo do inversor. Avisa quando os últimos 7 dias somam menos de 70% do esperado (limite editável).</li>
+        <li><b>A quem reclamar, e em que ordem.</b> Instalador, distribuidora (com protocolo), ouvidoria e ANEEL (telefone 167). Com um modelo de frase para a reclamação.</li>
+        <li><b>Planilha de exemplo.</b> A casa fictícia, com 12 contas e 90 dias de diário.</li>
+      </ul>
+      <p>O guia em PDF lê bem no celular. A planilha é mais confortável no computador ou no tablet.</p>
+      <p class="ia">Feito com apoio de inteligência artificial; regras e números conferidos nas fontes oficiais citadas no guia.</p>
+      <p class="seg-eletrica">Nada de mexer em parte elétrica: o guia só pede o que dá para ver do chão e pelo celular.</p>
+    </div>
+    <div class="pecas esq">
+      <figure class="pag capa"><img src="img/capa-mini-176.webp" srcset="img/capa-mini-176.webp 176w, img/capa-mini-352.webp 352w" sizes="112px" width="176" height="249" loading="lazy" alt="Capa do guia Solar sem Susto, com o cartão amarelo da conta de luz"></figure>
+      <figure class="pag">
+        <a class="pag__img" href="img/pdf-p18.webp" data-amplia><span class="so-leitor">Ampliar. </span><img src="img/pdf-p18-560.webp" srcset="img/pdf-p18-560.webp 560w, img/pdf-p18.webp 1100w" sizes="(min-width:900px) 200px, 140px" width="560" height="721" loading="lazy" alt="Página do guia, capítulo 6: o diário de geração, a tabela de alertas e o exemplo de 90 dias"></a>
+        <figcaption>Página real do guia: capítulo 6, o diário e o alerta de queda.<span>Toque para ampliar.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="tela palco preco" id="preco" aria-labelledby="t-preco" data-revela>
+  <div class="col">
+    <h2 id="t-preco">Compra única, sem mensalidade.</h2>
+    <div class="preco__grid">
+      <div class="preco__a">
+        <p class="aviso">Não substitui o engenheiro, o instalador nem a distribuidora, e não mexe no seu sistema. Não garante economia, geração nem retorno: os números são do exemplo, com premissas escritas.</p>
+        <a class="link-bloco" href="#o-que-nao-e">Ler o aviso completo</a>
+        <div class="valor">R$ 27</div>
+        <p class="valor-nota">compra única · Guia de 25 páginas + planilha + exemplo</p>
+<p class="valor-nota parcelas">R$&nbsp;27 à vista no Pix, no boleto ou no cartão. Ou em até 3x no cartão, com acréscimo da Kiwify: 3x de R$&nbsp;9,64 (total R$&nbsp;28,92).</p>
+      </div>
+      <div class="preco__b">
+        <div class="compra">
+          <a class="botao botao--preco" href="https://pay.kiwify.com.br/lJJpBgc" data-evento="CliqueQuero">Quero conferir a minha conta por R$&nbsp;27</a>
+          <p class="seguranca">Pagamento na Kiwify, Pix ou cartão. <b>7&nbsp;dias</b> para pedir o dinheiro de volta.</p>
+        </div>
+        <p class="acesso">Acesso na hora no Pix e no cartão, pela área de membros da Kiwify; no boleto, depois da compensação. O link chega no seu e-mail.</p>
+        <div class="garantia">
+          <figure class="selo" aria-hidden="true"><b>Garantia</b><span>7 dias</span><small>para pedir o dinheiro de volta, direto na Kiwify (CDC art. 49)</small></figure>
+          <h3>7 dias para pedir o dinheiro de volta</h3>
+          <p>Leia o guia e confira uma conta. Se não servir, peça o reembolso em até 7 dias, sem explicar, pela Kiwify. É direito seu pelo Código de Defesa do Consumidor (art. 49).</p>
+          <a class="link-bloco" href="termos.html#reembolso">Como pedir o reembolso</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tela palco-2" id="proposta" aria-labelledby="t5" data-revela>
+  <div class="col duas duas--inv">
+    <div class="txt">
+      <h2 id="t5">Ainda vai comprar? O guia também confere a proposta.</h2>
+      <p>No guia também: o preço por Wp comparado a uma referência de mercado, a conta de retorno com o Fio B de cada ano e 12 perguntas para fazer antes de assinar.</p>
+    </div>
+    <div class="objeto2">
+      <div class="prop">
+        <div class="conta" role="group" aria-label="Exemplo do guia: proposta conferida">
+          <p class="conta__topo"><span>Proposta</span><span>exemplo do guia</span></p>
+          <p class="prop__onde">4,4 kWp (8 placas de 550 W), em São Paulo.</p>
+          <dl class="linhas">
+            <div class="linha"><dt>Geração prometida</dt><dd>600<small>kWh por mês</small></dd></div>
+            <div class="linha linha--marcada linha--regra"><dt>Pela conta simples, com o sol da cidade</dt><dd>424 a 485<small>kWh por mês</small></dd></div>
+          </dl>
+          <p class="leitura"><b>PROMESSA ACIMA DA FAIXA: PEÇA AS PREMISSAS</b></p>
+          <p class="inverno">Não prova erro. Mostra que vale pedir as premissas por escrito.</p>
+        </div>
+        <p class="rotulo">Exemplo fictício do guia. Estimativa com premissas, não promessa de geração. Reprodução dos valores do exemplo, não é captura de tela.</p>
+      </div>
+    </div>
+    <figure class="pag pag--p11">
+      <a class="pag__img" href="img/pdf-p11.webp" data-amplia><span class="so-leitor">Ampliar. </span><img src="img/pdf-p11-560.webp" srcset="img/pdf-p11-560.webp 560w, img/pdf-p11.webp 1100w" sizes="(min-width:900px) 220px, 140px" width="560" height="721" loading="lazy" alt="Página do guia, capítulo 3: conferir a proposta antes de assinar, com a conta simples da geração"></a>
+      <figcaption>Página real do guia: capítulo 3, conferir a proposta.<span>Toque para ampliar.</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="tela papel" id="perguntas" aria-labelledby="t7">
+  <div class="col">
+    <h2 id="t7">Perguntas frequentes</h2>
+    <div class="faq">
+<details><summary>A placa zera a conta de luz?</summary><p>Não. Toda casa paga o mínimo da ligação: 30, 50 ou 100 kWh por mês, conforme o tipo de ligação. Quem pediu a ligação depois de 07/01/2023 também paga uma parte do Fio B (o uso da rede) sobre o que compensa: 60% em 2026, 75% em 2027 e 90% em 2028 (Lei 14.300, art. 27). De 2029 em diante, a regra da ANEEL ainda não saiu. O guia mostra como conferir se a compensação está certa.</p></details>
+<details><summary>Dá para usar no celular?</summary><p>O guia em PDF lê bem no celular. A planilha abre no Google Planilhas, no Excel e no LibreOffice, sem macro, mas é mais confortável no computador ou no tablet.</p></details>
+<details id="o-que-nao-e"><summary>Substitui o instalador?</summary><p>Não. O material explica as regras gerais e organiza os seus números. Aviso completo:
+<span class="ln">Não é projeto nem serviço técnico. Não substitui o engenheiro, o instalador nem a distribuidora. Projeto e instalação exigem profissional habilitado, com ART, e seguem as regras da sua distribuidora.</span>
+<span class="ln">Não mexe no seu sistema nem na sua conta. A planilha calcula com o que você digita; não lê o inversor nem a distribuidora.</span>
+<span class="ln">Não garante economia, geração, retorno nem resultado. Não é recomendação de investimento nem de financiamento.</span>
+<span class="ln">Não tem vínculo com a ANEEL, com distribuidoras, fabricantes, instaladores ou bancos.</span>
+<span class="ln">Regras conferidas nas fontes oficiais em 27/10/2026. O que está em tramitação está marcado no guia e fica fora das contas.</span></p></details>
+<details><summary>E a MP 1.304? A regra mudou de novo?</summary><p>Não para o Fio B. A MP 1.304 virou a Lei 15.269/2025 e não mudou os percentuais do art. 27 da Lei 14.300 (conferido em 28/10/2026). O PL 1.438/2026 está em tramitação na Câmara e não vale enquanto não virar lei. No guia, ele fica marcado e fora das contas. Na planilha, o Fio B, a tarifa e o percentual de 2029 em diante ficam em células que você pode mudar.</p></details>
+<details><summary>Garante economia?</summary><p>Não. O guia não promete economia, geração nem retorno. Os números são do exemplo, com as premissas escritas, e servem para mostrar a conta.</p></details>
+    </div>
+  </div>
+</section>
 </main>
-<footer><div class="wrap"><p>Conteúdo criado com apoio de inteligência artificial e revisado por pessoas. Esta página pode trazer narração gerada por inteligência artificial, sempre rotulada. Não prometemos resultados. Imagens ilustrativas. O material não substitui o engenheiro, o integrador nem a distribuidora. Sem vínculo com a ANEEL ou com qualquer marca citada. Este site não é da Meta nem do Facebook e não é endossado por essas empresas.</p>
-<p>Venda intermediada pela Kiwify: os dados completos do vendedor (nome e documento) aparecem no checkout, antes do pagamento. Responsável: Lucas, marca Com Critério · contato: <a href="mailto:lucaszone36@gmail.com">lucaszone36@gmail.com</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a></p></div></footer>
-<div class="fixa"><span class="p">R$ 27</span><a class="cta" href="https://pay.kiwify.com.br/lJJpBgc">Quero o meu</a></div>
+
+<footer class="rodape palco-2">
+  <div class="col">
+    <p class="rodape__nome">Solar sem Susto</p>
+    <p>Com Critério. Pagamento processado pela Kiwify. O vendedor aparece no checkout antes do pagamento. Garantia de 7 dias (Código de Defesa do Consumidor, art. 49).</p>
+    <p>Suporte pela área de membros da Kiwify ou respondendo ao e-mail da compra.</p>
+    <p>Material feito com apoio de inteligência artificial. As imagens são páginas reais do guia ou reprodução dos valores do exemplo, cada uma com o seu rótulo. Não prometemos resultados.</p>
+    <p>Sem vínculo com a ANEEL nem com qualquer marca citada. Este site não é da Meta nem do Facebook e não é endossado por essas empresas.</p>
+    <p>Esta página usa o Pixel da Meta para medir anúncios. <a href="privacidade.html#pixel">Saiba como recusar.</a></p>
+    <p class="links"><a href="termos.html">Termos de uso</a><a href="termos.html#vendedor">Quem vende</a><a href="termos.html#reembolso">Reembolso</a><a href="privacidade.html">Política de privacidade</a></p>
+  </div>
+</footer>
+
+<div class="barra" id="barra" role="region" aria-label="Comprar" inert>
+  <p class="barra__preco"><b>R$&nbsp;27</b><span>7 dias de garantia</span></p>
+  <a class="botao" href="https://pay.kiwify.com.br/lJJpBgc" data-evento="CliqueQuero">Quero conferir a minha conta</a>
+</div>
+
+<dialog id="ampliar" aria-label="Página do guia ampliada">
+  <div class="dlg__topo"><button type="button" class="fechar" id="fechar">Fechar</button></div>
+  <div class="dlg__rolo" id="ampliar-rolo"></div>
+</dialog>
+
+<script>/* H1 por anúncio (utm_content terminando em _V2 ou _B = H1 B; ?v=a|b só força na prévia), sem sorteio; o CTA é sempre A */(function(){document.documentElement.classList.add("js");var q=new URLSearchParams(location.search),h=document.querySelector("h1"),uc=(q.get("utm_content")||"").toUpperCase(),f=(q.get("v")||"").toLowerCase(),v=/_(V2|B)$/.test(uc)?"B":"A";if(f==="a"||f==="b")v=f.toUpperCase();window.__sol={h1:v};
+if(v==="B"){h.innerHTML='<span class="l">Por que a conta veio alta,</span> <span class="l">mesmo com placa?</span> <span class="h1-resto">Entenda linha por linha</span>';h.className="h1--longo"}
+if(uc.indexOf("SOLAR_ANTES")===0){var pr=document.getElementById("proposta"),pc=document.getElementById("preco");if(pr&&pc)pc.parentNode.insertBefore(pr,pc)}
+var d=document.getElementById("o-que-nao-e");document.querySelectorAll('a[href="#o-que-nao-e"]').forEach(function(a){a.addEventListener("click",function(){d.open=true})})})();</script>
+
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','474807754604596');fbq('track','PageView');fbq('track','ViewContent',{content_name:"Solar sem Susto",content_type:'product',value:27,currency:'BRL',h1:(window.__sol||{}).h1});</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=474807754604596&ev=PageView&noscript=1"></noscript>
+
 <script>/* repassa UTM e fbclid do anuncio para o checkout da Kiwify (atribuicao da venda) */(function(){var q=new URLSearchParams(location.search),p=[];["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"].forEach(function(n){var v=q.get(n);if(v)p.push(n+"="+encodeURIComponent(v))});if(!p.length)return;document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(a){a.href+=(a.href.indexOf("?")<0?"?":"&")+p.join("&")})})();</script>
-<script>/* teste de demanda: conta cliques no botao de compra (evento proprio, sem duplicar o InitiateCheckout da Kiwify) */document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(a){a.addEventListener("click",function(){if(window.fbq)fbq("trackCustom","CliqueQuero",{produto:"solar-sem-susto"})})});</script>
-</body></html>
+
+<script>/* clique de compra (CliqueQuero), ViuPreco, barra fixa, ampliar página e destaques ao rolar */(function(){
+var $=function(s){return document.querySelector(s)},tem="IntersectionObserver" in window;
+var botoes=Array.prototype.slice.call(document.querySelectorAll('a[href*="pay.kiwify.com.br"]'));
+function dados(){return{produto:"solar-sem-susto",h1:(window.__sol||{}).h1}}
+function abrindo(a){if(a.getAttribute("aria-busy")==="true")return;a.setAttribute("aria-busy","true");a._t=a.innerHTML;a.textContent="Abrindo o pagamento…";setTimeout(volta,4000)}
+function volta(){botoes.forEach(function(a){if(a.getAttribute("aria-busy")==="true"){a.removeAttribute("aria-busy");if(a._t)a.innerHTML=a._t}})}
+addEventListener("pageshow",volta);
+botoes.forEach(function(a){
+ a.addEventListener("auxclick",function(e){if(e.button===1&&window.fbq)fbq("trackCustom","CliqueQuero",dados())});
+ a.addEventListener("click",function(e){
+  if(a.getAttribute("aria-busy")==="true"){e.preventDefault();return}
+  if(!window.fbq)return;
+  fbq("trackCustom","CliqueQuero",dados());
+  if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button!==0)return;
+  e.preventDefault();abrindo(a);
+  setTimeout(function(){location.href=a.href},200)})});
+var barra=$("#barra"),cta=$("#cta-heroi"),pbtn=$("#preco .botao"),saiu=false,noPreco=false;
+function mostra(){var on=saiu&&!noPreco;barra.classList.toggle("on",on);if(on)barra.removeAttribute("inert");else barra.setAttribute("inert","")}
+var revelaveis=Array.prototype.slice.call(document.querySelectorAll("[data-revela]"));
+if(tem){
+ new IntersectionObserver(function(e){var r=e[0];saiu=!r.isIntersecting&&r.boundingClientRect.top<0;mostra()}).observe(cta);
+ new IntersectionObserver(function(e){noPreco=e[0].isIntersecting;mostra()}).observe(pbtn);
+ var v=$("#preco .valor");if(v)new IntersectionObserver(function(e,o){if(e[0].isIntersecting){if(window.fbq)fbq("trackCustom","ViuPreco");o.disconnect()}}).observe(v);
+ var io=new IntersectionObserver(function(es,o){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("visto");o.unobserve(x.target)}})},{threshold:.35});
+ revelaveis.forEach(function(el){io.observe(el)});
+}else{revelaveis.forEach(function(el){el.classList.add("visto")})}
+var dlg=$("#ampliar"),rolo=$("#ampliar-rolo"),ult=null;
+if(dlg&&typeof dlg.showModal==="function"){
+ document.querySelectorAll("[data-amplia]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();ult=a;var t=a.querySelector("img"),im=new Image();im.alt=t?t.alt:"";im.width=1100;im.height=1417;im.src=a.getAttribute("href");rolo.textContent="";rolo.appendChild(im);dlg.showModal()})});
+ $("#fechar").addEventListener("click",function(){dlg.close()});
+ dlg.addEventListener("close",function(){rolo.textContent="";if(ult)ult.focus()});
+}})();</script>
+</body>
+</html>
